@@ -1,0 +1,442 @@
+sunday!
+2주차
+['회고_offline_토요일3시a', '회고_offline_토요일3시b', '회고_offline_토요일7시a', '회고_offline_토요일7시c', '회고_offline_토요일7시g', '회고_offline_일요일3시b', '회고_offline_토요일7시b', '회고_offline_토요일7시h', '회고_offline_토요일3시e', '회고_offline_토요일3시f', '회고_offline_토요일7시d', '회고_offline_토요일7시e', '회고_offline_일요일7시a', '회고_offline_일요일7시f', '회고_offline_일요일7시b', '회고_offline_토요일3시d', '회고_offline_토요일7시f', '회고_offline_일요일7시e', '회고_offline_토요일3시c', '회고_offline_토요일7시i', '회고_offline_일요일3시a', '회고_offline_일요일7시c', '회고_offline_일요일7시d', '회고_online_일요일3시', '회고_online_토요일7시b', '회고_online_토요일7시a', '회고_shareonly_a', '회고_shareonly_j', '회고_shareonly_i', '회고_shareonly_e', '회고_shareonly_d', '회고_shareonly_f', '회고_shareonly_g', '회고_shareonly_b', '회고_shareonly_c', '회고_shareonly_h']
+Traceback (most recent call last):
+  File "memoir_v7.py", line 32, in <module>
+    schedule.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 466, in run
+    ret = self.job_func()
+  File "memoir_v7.py", line 16, in run_reply
+    reply()
+  File "/home/dg/reply_v7.py", line 299, in reply
+    process_reply_excel(current_term)
+  File "/home/dg/reply_v7.py", line 111, in process_reply_excel
+    before_df = load_excel('reply_check/' + str(term_length) + '_week_reply_check')
+  File "/home/dg/reply_v7.py", line 105, in load_excel
+    dataframe = pd.read_excel(title, index_col = 0)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/excel.py", line 653, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/excel.py", line 424, in __init__
+    self.book = xlrd.open_workbook(filepath_or_buffer)
+  File "/usr/local/lib/python3.5/dist-packages/xlrd/__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '7_output/reply_check/0_week_reply_check.xlsx'
+sunday!
+3주차
+['회고_offline_토요일3시a', '회고_offline_토요일3시b', '회고_offline_토요일7시a', '회고_offline_토요일7시c', '회고_offline_토요일7시g', '회고_offline_일요일3시b', '회고_offline_토요일7시b', '회고_offline_토요일7시h', '회고_offline_토요일3시e', '회고_offline_토요일3시f', '회고_offline_토요일7시d', '회고_offline_토요일7시e', '회고_offline_일요일7시a', '회고_offline_일요일7시f', '회고_offline_일요일7시b', '회고_offline_토요일3시d', '회고_offline_토요일7시f', '회고_offline_일요일7시e', '회고_offline_토요일3시c', '회고_offline_토요일7시i', '회고_offline_일요일3시a', '회고_offline_일요일7시c', '회고_offline_일요일7시d', '회고_online_일요일3시', '회고_online_토요일7시b', '회고_online_토요일7시a', '회고_shareonly_a', '회고_shareonly_j', '회고_shareonly_i', '회고_shareonly_e', '회고_shareonly_d', '회고_shareonly_f', '회고_shareonly_g', '회고_shareonly_b', '회고_shareonly_c', '회고_shareonly_h']
+Traceback (most recent call last):
+  File "memoir_v7.py", line 32, in <module>
+    schedule.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 466, in run
+    ret = self.job_func()
+  File "memoir_v7.py", line 16, in run_reply
+    reply()
+  File "/home/dg/reply_v7.py", line 299, in reply
+    process_reply_excel(current_term)
+  File "/home/dg/reply_v7.py", line 111, in process_reply_excel
+    before_df = load_excel('reply_check/' + str(term_length) + '_week_reply_check')
+  File "/home/dg/reply_v7.py", line 105, in load_excel
+    dataframe = pd.read_excel(title, index_col = 0)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/excel.py", line 653, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/excel.py", line 424, in __init__
+    self.book = xlrd.open_workbook(filepath_or_buffer)
+  File "/usr/local/lib/python3.5/dist-packages/xlrd/__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '7_output/reply_check/0_week_reply_check.xlsx'
+Traceback (most recent call last):
+  File "schedule_reply.py", line 13, in <module>
+    time.sleep(1)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "memoir_v7.py", line 30, in <module>
+    time.sleep(1)
+KeyboardInterrupt
+/home/dg/reply_v7.py:61: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  conversations = pd.concat([conversations, json_normalize(res.json()['messages'])], ignore_index=True)
+/home/dg/reply_v7.py:151: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  new_merge_df = pd.concat([new_merge_df, new_df], axis = 1)
+/home/dg/reply_v7.py:161: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  merge_df = pd.concat([merge_df, df], axis = 1)
+5주차
+reply count start!
+reply count done!
+repled count done!
+process_reply_excel done!
+6주차
+reply count start!
+Traceback (most recent call last):
+  File "schedule_reply.py", line 12, in <module>
+    schedule.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 466, in run
+    ret = self.job_func()
+  File "schedule_reply.py", line 6, in run_reply
+    reply()
+  File "/home/dg/reply_v7.py", line 293, in reply
+    count(oldest, latest, i)
+  File "/home/dg/reply_v7.py", line 225, in count
+    reply_write_num[user_name.index(changetonick(p))] += 1
+ValueError: None is not in list
+Traceback (most recent call last):
+  File "memoir_v7.py", line 3, in <module>
+    from sunday_v7 import sunday
+  File "/home/dg/sunday_v7.py", line 4, in <module>
+    from pandas.io.json import json_normalize
+  File "/usr/local/lib/python3.5/dist-packages/pandas/__init__.py", line 42, in <module>
+    from pandas.core.api import *
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/api.py", line 26, in <module>
+    from pandas.core.groupby import Grouper
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.groupby import GroupBy  # noqa: F401
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/groupby/groupby.py", line 37, in <module>
+    from pandas.core.frame import DataFrame
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 100, in <module>
+    from pandas.core.series import Series
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/series.py", line 4390, in <module>
+    Series._add_series_or_dataframe_operations()
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 10138, in _add_series_or_dataframe_operations
+    from pandas.core import window as rwindow
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/window.py", line 1835, in <module>
+    class Expanding(_Rolling_and_Expanding):
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/window.py", line 2072, in Expanding
+    def corr(self, other=None, pairwise=None, **kwargs):
+  File "/usr/local/lib/python3.5/dist-packages/pandas/util/_decorators.py", line 314, in __call__
+    func.__doc__ = dedent(self.join.join(docitems))
+  File "/usr/lib/python3.5/textwrap.py", line 431, in dedent
+    text = _whitespace_only_re.sub('', text)
+KeyboardInterrupt
+sunday!
+Traceback (most recent call last):
+  File "memoir_v7.py", line 29, in <module>
+    schedule.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 466, in run
+    ret = self.job_func()
+  File "memoir_v7.py", line 9, in run_sunday
+    sunday()
+  File "/home/dg/sunday_v7.py", line 223, in sunday
+    oldests, latests = find_time(oldest, latest, interval = 7, term_length = term_length)
+NameError: name 'find_time' is not defined
+Traceback (most recent call last):
+  File "schedule_reply.py", line 4, in <module>
+    from replied_v7 import replied
+  File "/home/dg/replied_v7.py", line 10, in <module>
+    import util
+ImportError: No module named 'util'
+Traceback (most recent call last):
+  File "schedule_reply.py", line 4, in <module>
+    from replied_v7 import replied
+  File "/home/dg/replied_v7.py", line 10, in <module>
+    import util
+ImportError: No module named 'util'
+Traceback (most recent call last):
+  File "schedule_reply.py", line 4, in <module>
+    from replied_v7 import replied
+  File "/home/dg/replied_v7.py", line 10, in <module>
+    import util
+ImportError: No module named 'util'
+Traceback (most recent call last):
+  File "schedule_reply.py", line 4, in <module>
+    from replied_v7 import replied
+  File "/home/dg/replied_v7.py", line 10, in <module>
+    import util
+ImportError: No module named 'util'
+/home/dg/id/utils/util.py:57: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  conversations = pd.concat([conversations, json_normalize(res.json()['messages'])], ignore_index=True)
+/home/dg/id/utils/util.py:131: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  df = pd.concat([df, make_data(channels[i], oldest, latest)], ignore_index=True)
+1주차
+2주차
+3주차
+4주차
+5주차
+6주차
+Traceback (most recent call last):
+  File "schedule_reply.py", line 18, in <module>
+    schedule.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 466, in run
+    ret = self.job_func()
+  File "schedule_reply.py", line 10, in run_replied
+    replied()
+  File "/home/dg/id/replied_v7.py", line 78, in replied
+    count(oldest, latest, i)
+  File "/home/dg/id/replied_v7.py", line 28, in count
+    all_members, df = get_data(oldest, latest)
+  File "/home/dg/id/utils/util.py", line 126, in get_data
+    all_members = get_all_members(channels)
+  File "/home/dg/id/utils/util.py", line 118, in get_all_members
+    all_members.extend(get_members(find_channel(channels[i])))
+  File "/home/dg/id/utils/util.py", line 41, in find_channel
+    channel_list = get_all_channel()
+  File "/home/dg/id/utils/util.py", line 35, in get_all_channel
+    channel_list = json_normalize(res.json()['channels'])
+KeyError: 'channels'
+/home/dg/id/utils/util.py:57: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  conversations = pd.concat([conversations, json_normalize(res.json()['messages'])], ignore_index=True)
+/home/dg/id/utils/util.py:131: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  df = pd.concat([df, make_data(channels[i], oldest, latest)], ignore_index=True)
+/home/dg/id/utils/util.py:57: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  conversations = pd.concat([conversations, json_normalize(res.json()['messages'])], ignore_index=True)
+/home/dg/id/utils/util.py:131: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  df = pd.concat([df, make_data(channels[i], oldest, latest)], ignore_index=True)
+/home/dg/id/utils/util.py:57: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  conversations = pd.concat([conversations, json_normalize(res.json()['messages'])], ignore_index=True)
+/home/dg/id/utils/util.py:131: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  df = pd.concat([df, make_data(channels[i], oldest, latest)], ignore_index=True)
+/home/dg/id/utils/util.py:57: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  conversations = pd.concat([conversations, json_normalize(res.json()['messages'])], ignore_index=True)
+/home/dg/id/utils/util.py:131: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  df = pd.concat([df, make_data(channels[i], oldest, latest)], ignore_index=True)
+/home/dg/id/utils/util.py:57: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  conversations = pd.concat([conversations, json_normalize(res.json()['messages'])], ignore_index=True)
+/home/dg/id/utils/util.py:131: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  df = pd.concat([df, make_data(channels[i], oldest, latest)], ignore_index=True)
+1주차
+2주차
+3주차
+4주차
+5주차
+6주차
+Traceback (most recent call last):
+  File "schedule_reply.py", line 17, in <module>
+    schedule.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 466, in run
+    ret = self.job_func()
+  File "schedule_reply.py", line 10, in run_replied
+    replied()
+  File "/home/dg/id/replied_v7.py", line 78, in replied
+    current_term = i
+  File "/home/dg/id/replied_v7.py", line 28, in count
+    all_members, df = get_data(oldest, latest)
+  File "/home/dg/id/utils/util.py", line 126, in get_data
+    all_members = get_all_members(channels)
+  File "/home/dg/id/utils/util.py", line 118, in get_all_members
+    all_members.extend(get_members(find_channel(channels[i])))
+  File "/home/dg/id/utils/util.py", line 41, in find_channel
+    channel_list = get_all_channel()
+  File "/home/dg/id/utils/util.py", line 35, in get_all_channel
+    channel_list = json_normalize(res.json()['channels'])
+KeyError: 'channels'
+/home/dg/id/utils/util.py:57: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  conversations = pd.concat([conversations, json_normalize(res.json()['messages'])], ignore_index=True)
+/home/dg/id/utils/util.py:131: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  df = pd.concat([df, make_data(channels[i], oldest, latest)], ignore_index=True)
+7주차
+Traceback (most recent call last):
+  File "memoir_v7.py", line 29, in <module>
+    #schedule.every().tuesday.at("10:70").do(run_thursday)
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 466, in run
+    ret = self.job_func()
+  File "memoir_v7.py", line 12, in run_thursday
+    sunday()
+  File "/home/dg/id/thursday_v7.py", line 82, in thursday
+    count(oldest, latest, edit_start, late_latest, i)
+  File "/home/dg/id/thursday_v7.py", line 39, in count
+    sunday_all_members, sunday_df = get_data(edit_start, oldest)
+  File "/home/dg/id/utils/util.py", line 126, in get_data
+    all_members = get_all_members(channels)
+  File "/home/dg/id/utils/util.py", line 118, in get_all_members
+    all_members.extend(get_members(find_channel(channels[i])))
+  File "/home/dg/id/utils/util.py", line 41, in find_channel
+    channel_list = get_all_channel()
+  File "/home/dg/id/utils/util.py", line 35, in get_all_channel
+    channel_list = json_normalize(res.json()['channels'])
+KeyError: 'channels'
+/home/dg/id/utils/util.py:57: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  conversations = pd.concat([conversations, json_normalize(res.json()['messages'])], ignore_index=True)
+/home/dg/id/utils/util.py:131: FutureWarning: Sorting because non-concatenation axis is not aligned. A future version
+of pandas will change to not sort by default.
+
+To accept the future behavior, pass 'sort=False'.
+
+To retain the current behavior and silence the warning, pass 'sort=True'.
+
+  df = pd.concat([df, make_data(channels[i], oldest, latest)], ignore_index=True)
+7주차
+Traceback (most recent call last):
+  File "memoir_v7.py", line 33, in <module>
+    schedule.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "/usr/local/lib/python3.5/dist-packages/schedule/__init__.py", line 466, in run
+    ret = self.job_func()
+  File "memoir_v7.py", line 15, in run_thursday
+    thursday()
+  File "/home/dg/id/thursday_v7.py", line 82, in thursday
+    count(oldest, latest, edit_start, late_latest, i)
+  File "/home/dg/id/thursday_v7.py", line 39, in count
+    sunday_all_members, sunday_df = get_data(edit_start, oldest)
+  File "/home/dg/id/utils/util.py", line 126, in get_data
+    all_members = get_all_members(channels)
+  File "/home/dg/id/utils/util.py", line 118, in get_all_members
+    all_members.extend(get_members(find_channel(channels[i])))
+  File "/home/dg/id/utils/util.py", line 41, in find_channel
+    channel_list = get_all_channel()
+  File "/home/dg/id/utils/util.py", line 35, in get_all_channel
+    channel_list = json_normalize(res.json()['channels'])
+KeyError: 'channels'
