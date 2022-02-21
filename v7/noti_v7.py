@@ -24,12 +24,12 @@ def count(oldest, latest, term):
     user_uncompleted = [j for j in all_members if j not in user_completed]
     fin_df = pd.DataFrame(columns = all_members)
     
-    fin_df.loc['memoir_' + str(term) + 'th'] = 'O'
+    fin_df.loc['noti_' + str(term) + 'th'] = 'O'
     for _ in user_uncompleted:
         if _ in user_short:
-            fin_df.loc['memoir_' + str(term) + 'th', _] = 'S'
+            fin_df.loc['noti_' + str(term) + 'th', _] = 'S'
         else:
-            fin_df.loc['memoir_' + str(term) + 'th', _] = 'X'
+            fin_df.loc['noti_' + str(term) + 'th', _] = 'X'
     fin_df = fin_df.transpose()
     
     # sorting

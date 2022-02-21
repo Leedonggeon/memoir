@@ -6,16 +6,13 @@ from archive_v7 import archive
 from noti_v7 import noti
 
 def run_noti():
-    noti
+    noti()
 
 def run_sunday():
     sunday()
 
 def run_thursday():
     thursday()
-
-def run_reply():
-    reply()
 
 def run_archive():
     archive()
